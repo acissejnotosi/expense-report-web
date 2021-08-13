@@ -9,6 +9,17 @@ const Header = () => {
         src={logoImage}
         alt='Italian Trulli'
       />
+      <div className='header-content__menu'>
+        <a className='header-content__menu__links' href='url'>
+          Expense Report
+        </a>
+        <a className='header-content__menu__links' href='url'>
+          About us
+        </a>
+        <a className='header-content__menu__links' href='url'>
+          Contact us
+        </a>
+      </div>
     </div>
   )
 }

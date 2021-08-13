@@ -1,1 +1,42 @@
 //styles for every component necessary for that project, including buttons, modals, etc.
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.header-content__logo {
+  width: 250px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.header-content__menu {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+
+  a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  a.active {
+    background-color: #04aa6d;
+    color: white;
+  }
+}
+
+.header-content__menu__links {
+  margin: 10px;
+  padding: 10px;
+}

@@ -1,12 +1,8 @@
 // there are the styles for the header, footer, the grid system, etc
 
 body {
-  margin: 40px;
+  margin: none;
 }
-
-/* .sidebar {
-  grid-area: sidebar;
-} */
 
 .wrapper__bar {
   grid-area: bar;
@@ -18,6 +14,9 @@ body {
 
 .wrapper__header {
   grid-area: header;
+  &.wrapper--box {
+    background-color: #fa857c;
+  }
 }
 
 .wrapper__footer {
@@ -66,9 +65,11 @@ body {
 .wrapper--box {
   background-color: #444;
   color: #fff;
-  border-radius: 5px;
   padding: 10px;
   font-size: 150%;
+  &.wrapper__header {
+    padding: 0px;
+  }
 }
 
 .wrapper__header,
