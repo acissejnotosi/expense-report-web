@@ -1,0 +1,82 @@
+// there are the styles for the header, footer, the grid system, etc
+
+body {
+  margin: 40px;
+}
+
+/* .sidebar {
+  grid-area: sidebar;
+} */
+
+.wrapper__bar {
+  grid-area: bar;
+}
+
+.wrapper__content {
+  grid-area: content;
+}
+
+.wrapper__header {
+  grid-area: header;
+}
+
+.wrapper__footer {
+  grid-area: footer;
+}
+
+.wrapper {
+  background-color: #fff;
+  color: #444;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-areas:
+    "header"
+    "bar"
+    "content"
+    "footer";
+}
+
+@media only screen and (min-width: 500px) {
+  .wrapper {
+    grid-template-columns: 20% auto;
+    grid-template-areas:
+      "header   header"
+      "content  content"
+      "bar bar"
+      "footer   footer";
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .wrapper {
+    grid-gap: 20px;
+    grid-template-columns: 120px auto 120px;
+    grid-template-areas:
+      "header  header  header"
+      "bar bar bar"
+      "... content ..."
+      "footer  footer  footer";
+    max-width: 100%;
+  }
+}
+
+.wrapper--box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 150%;
+}
+
+.wrapper__header,
+.wrapper__footer {
+  background-color: #999;
+}
+
+.wrapper__bar {
+  background-color: #ccc;
+  color: #444;
+}
